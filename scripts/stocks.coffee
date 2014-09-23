@@ -1,8 +1,8 @@
 # Description:
-#   Greet the world
+#   Show chart for a stock
 #
 # Commands:
-#   hubot greet - Say hello to the world
+#   hubot stock <ticker> - Shows a chart for <ticker>
 
 module.exports = (robot) ->
     robot.respond /stock (.*)/i, (msg) ->
