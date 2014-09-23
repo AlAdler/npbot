@@ -13,7 +13,7 @@
 
 process.env.HUBOT_WEATHER_API_URL ||=
   'http://api.openweathermap.org/data/2.5/weather'
-process.env.HUBOT_WEATHER_UNITS ||= 'imperial'
+process.env.HUBOT_WEATHER_UNITS ||= 'metric'
 
 module.exports = (robot) ->
     robot.hear /weather in (\w+)/i, (msg) ->
