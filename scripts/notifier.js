@@ -9,7 +9,7 @@ var twilio = require('twilio');
 module.exports = function(robot){
     robot.router.post('/hubot/npnotify', function(req, res){
         robot.messageRoom(req.body.channel, req.body.message);
-        if(req.body.phones !== null && req.body.phones.length > 0){
+        if(req.body.phones !== null && req.body.phones !== undefined && req.body.phones.length > 0){
             var twilioClient = new twilio.RestClient(process.env.TWILIO_ACC_SID, process.env.TWILIO_TOKEN);
             var phones = req.body.phones;
             for (var i = phones.length; i--; ) {
