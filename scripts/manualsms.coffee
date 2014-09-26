@@ -3,6 +3,8 @@
 #
 # Commands:
 #   hubot set phone for <user> to <phone> - set the user's phone number.
+#   hubot get phone for <user> - check the user's phone number
+#   hubot send sms to <user> saying <msg> - sends the <msg> to the users phone
 
 twilio = require('twilio');
 
