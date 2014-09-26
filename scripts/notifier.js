@@ -1,8 +1,8 @@
 // Description:
-//   notify all the things!
+//   notify all the things! with optional SMS
 //
 // URLS:
-//   POST /hubot/notify ({message:<message>, channel:<channel>, phones:[<phone1, phone2]})
+//   POST /hubot/npnotify ({"message":"<message>", "channel":"<channel>", "phones":["<phone1>", "<phone2>"]})
 
 var twilio = require('twilio');
 
@@ -17,7 +17,7 @@ module.exports = function(robot){
                     to:phones[i],
                     from:process.env.TWILIO_FROM_PHONE,
                     body:process.env.HUBOT_SLACK_BOTNAME + ': ' + req.body.message
-                }, null);
+                }, null);//TODO: add logs on fail
             }
         }
         res.end();
