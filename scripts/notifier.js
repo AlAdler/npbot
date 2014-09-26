@@ -6,7 +6,7 @@
 
 module.exports = function(robot){
     robot.router.post('/hubot/notify', function(req, res){
-        var body = JSON.parse(req.body);
+        var body = req.body;
         robot.messageRoom(body.channel, body.message);
         res.end();
     });
