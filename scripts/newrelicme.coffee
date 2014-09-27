@@ -43,4 +43,4 @@ module.exports = (robot) ->
     accountId = process.env.HUBOT_NEWRELIC_ACCOUNT_ID
     appIds     = process.env.HUBOT_NEWRELIC_APP_ID.split(',')
     apiKey    = process.env.HUBOT_NEWRELIC_API_KEY
-    fetchData(accountId, appId, apiKey, msg) for appId in appIdsex
+    fetchData(accountId, appId, apiKey, msg) for appId in appIds
