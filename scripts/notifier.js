@@ -1,6 +1,12 @@
 // Description:
 //   notify all the things! with optional SMS
 //
+// Configuration:
+//   TWILIO_ACC_SID
+//   TWILIO_TOKEN
+//   TWILIO_FROM_PHONE
+//   HUBOT_SLACK_BOTNAME
+//
 // URLS:
 //   POST /hubot/npnotify ({"message":"<message>", "channel":"<channel>", "phones":["<phone1>", "<phone2>"]})
 

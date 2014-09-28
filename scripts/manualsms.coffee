@@ -1,6 +1,12 @@
 # Description:
 #   SMS interface.
 #
+# Configuration:
+#   TWILIO_ACC_SID
+#   TWILIO_TOKEN
+#   TWILIO_FROM_PHONE
+#   HUBOT_SLACK_BOTNAME
+#
 # Commands:
 #   hubot set phone for <user> to <phone> - set the user's phone number.
 #   hubot get phone for <user> - check the user's phone number
